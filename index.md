@@ -80,15 +80,26 @@
       function initEmbeddedMessaging() {
         try {
 
-			let browserLanguage = navigator.language || navigator.userLanguage || 'en-US';
-			console.log('First Information:', browserLanguage);
-			let supportedLanguages = ['en-US', 'es', 'pt-BR'];
-			let finalLanguage = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en-US';
-			console.log('Final language to use:', finalLanguage);
-			embeddedservice_bootstrap.settings.language = finalLanguage;
+			//let browserLanguage = navigator.language || navigator.userLanguage || 'en-US';
+			//console.log('First Information:', browserLanguage);
+			//let supportedLanguages = ['en-US', 'es', 'pt-BR'];
+			//let finalLanguage = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en-US';
+			//console.log('Final language to use:', finalLanguage);
+			//embeddedservice_bootstrap.settings.language = finalLanguage;
 
-			embeddedservice_bootstrap.settings.language = finalLanguage;
-			console.log('Idioma definido:', finalLanguage);			
+			//embeddedservice_bootstrap.settings.language = finalLanguage;
+			//console.log('Idioma definido:', finalLanguage);	
+
+   			//Using Variables:            
+            var LANGUAGE = 'Spanish';
+            var languageMap = {
+            'Portuguese': 'pt-BR',
+            'Spanish': 'es',
+            'English': 'en-US'
+            };
+            var finalLanguage = languageMap[LANGUAGE] || 'en-US';
+            embeddedservice_bootstrap.settings.language = finalLanguage;
+            console.log('Defined language:', finalLanguage);
 
 			embeddedservice_bootstrap.init(
 				'00DOx000002jjB7',
