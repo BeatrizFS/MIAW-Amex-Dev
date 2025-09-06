@@ -91,7 +91,7 @@
 			//console.log('Idioma definido:', finalLanguage);	
 
    			//Using Variables:            
-            var LANGUAGE = 'Portuguese';
+            var LANGUAGE = 'English';
             var languageMap = {
             'Portuguese': 'pt-BR',
             'Spanish': 'es',
