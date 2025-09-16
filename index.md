@@ -11,7 +11,10 @@
 	   var BANK_NAME = "VISA";
 	
 	   var BIN_NUMBER = "2345678981";
-	   var BIN_NUMBER_MASKED = BIN_NUMBER.slice(0, -4) + "****";		
+	   var BIN_NUMBER_MASKED = BIN_NUMBER.slice(0, -4) + "****";
+
+       console.log({ FIRST_NAME, LAST_NAME, EMAIL, PHONE, CLIENT_ID,
+              COUNTRY_OF_CARD, BANK_NAME, BIN_NUMBER, BIN_NUMBER_MASKED, IPAddress }); 
 	
 		window.addEventListener("onEmbeddedMessagingReady", function (e) {
 
