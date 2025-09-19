@@ -1,16 +1,16 @@
 <html>
   <body>
 	<script>
-	   var FIRST_NAME = "Marcela";
+	   var FIRST_NAME = "Lucia";
 	   var LAST_NAME = "Lima";
-	   var EMAIL = "marcela@test.com";
-	   var PHONE = "987654333";
+	   var EMAIL = "lima@test.com";
+	   var PHONE = "987654344";
 
-	   var CLIENT_ID = "1a2b3c4d78";
+	   var CLIENT_ID = "1a2b3c4u88";
 	   var COUNTRY_OF_CARD = "Brazil";
 	   var BANK_NAME = "VISA";
 	
-	   var BIN_NUMBER = "2345678981";
+	   var BIN_NUMBER = "2345677981";
 	   var BIN_NUMBER_MASKED = BIN_NUMBER.slice(0, -4) + "****";
 
        console.log({ FIRST_NAME, LAST_NAME, EMAIL, PHONE, CLIENT_ID,
