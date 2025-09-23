@@ -1,16 +1,16 @@
 <html>
   <body>
 	<script>
-	   var FIRST_NAME = "Marcela";
-	   var LAST_NAME = "Lima";
-	   var EMAIL = "marcela@test.com";
-	   var PHONE = "987654333";
+	   var FIRST_NAME = "Fernanda";
+	   var LAST_NAME = "Silva";
+	   var EMAIL = "silva@test.com";
+	   var PHONE = "98766644";
 
-	   var CLIENT_ID = "1a2b3c4d78";
+	   var CLIENT_ID = "1a2b3c4u99";
 	   var COUNTRY_OF_CARD = "Brazil";
 	   var BANK_NAME = "VISA";
 	
-	   var BIN_NUMBER = "23456789/81";
+	   var BIN_NUMBER = "1345699999";
 	   var BIN_NUMBER_MASKED = BIN_NUMBER.slice(0, -4) + "****";
 
        console.log({ FIRST_NAME, LAST_NAME, EMAIL, PHONE, CLIENT_ID,
@@ -105,23 +105,24 @@
             console.log('Defined language:', finalLanguage);
 
 			embeddedservice_bootstrap.init(
-				'00DOx000002jjB7',
+				'00DOu000001GFQj',
 				'Amex_External_Website',
-				'https://axaus-travel--dev.sandbox.my.site.com/ESWAmexExternalWebsite1756993093717',
+				'https://axaus-travel--uatt.sandbox.my.site.com/ESWAmexExternalWebsite1749245413118',
 				{
-					scrt2URL: 'https://axaus-travel--dev.sandbox.my.salesforce-scrt.com'
+					scrt2URL: 'https://axaus-travel--uatt.sandbox.my.salesforce-scrt.com'
 				}
 			);
-        } catch (err) {
-          console.error('Erro ao carregar Embedded Messaging:', err);
-        }
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
       }
     </script>
-	<script 
-	type='text/javascript' 
-	src='https://axaus-travel--dev.sandbox.my.site.com/ESWAmexExternalWebsite1756993093717/assets/js/bootstrap.min.js' 
-	onload='initEmbeddedMessaging()'>
-	</script>
+
+       <script 
+            type='text/javascript' 
+            src='https://axaus-travel--uatt.sandbox.my.site.com/ESWAmexExternalWebsite1749245413118/assets/js/bootstrap.min.js'                   onload='initEmbeddedMessaging()'>
+
+</script>
 
   </body>
 </html>
