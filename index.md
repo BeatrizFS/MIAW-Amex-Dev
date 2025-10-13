@@ -105,24 +105,23 @@
             console.log('Defined language:', finalLanguage);
 
 			embeddedservice_bootstrap.init(
-				'00DOu000001GFQj',
+				'00DOx000002jjB7',
 				'Amex_External_Website',
-				'https://axaus-travel--uatt.sandbox.my.site.com/ESWAmexExternalWebsite1749245413118',
+				'https://axaus-travel--dev.sandbox.my.site.com/ESWAmexExternalWebsite1756993093717',
 				{
-					scrt2URL: 'https://axaus-travel--uatt.sandbox.my.salesforce-scrt.com'
+					scrt2URL: 'https://axaus-travel--dev.sandbox.my.salesforce-scrt.com'
 				}
 			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
+        } catch (err) {
+          console.error('Erro ao carregar Embedded Messaging:', err);
+        }
       }
     </script>
-
-       <script 
-            type='text/javascript' 
-            src='https://axaus-travel--uatt.sandbox.my.site.com/ESWAmexExternalWebsite1749245413118/assets/js/bootstrap.min.js'                   onload='initEmbeddedMessaging()'>
-
-</script>
+	<script 
+	type='text/javascript' 
+	src='https://axaus-travel--dev.sandbox.my.site.com/ESWAmexExternalWebsite1756993093717/assets/js/bootstrap.min.js' 
+	onload='initEmbeddedMessaging()'>
+	</script>
 
   </body>
 </html>
