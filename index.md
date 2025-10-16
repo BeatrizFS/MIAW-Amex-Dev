@@ -63,20 +63,22 @@
 			"isEditableByEndUser": true
 		  }
 		});
-		
-		embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-		  "Email" : EMAIL,
-		  "Phone" : PHONE,
-		  "Client_ID" : CLIENT_ID,
-		  "Country_Of_Card" : COUNTRY_OF_CARD,
-		  "Bank_Name" : BANK_NAME,
-		  "BrowserName" : browserInfo,
-		  "BrowserLanguage" : browserLanguage,
-		  "BrowserPlatform" : browserPlatform,
-		  "UserAgent" : userAgent,
-		  "ScreenResolution" : screenResolution,
-		  "X10_first_digits_of_the_Card" : BIN_NUMBER
-				
+
+		embeddedservice_bootstrap.onReady(() => {
+			embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+			  "Email" : EMAIL,
+			  "Phone" : PHONE,
+			  "Client_ID" : CLIENT_ID,
+			  "Country_Of_Card" : COUNTRY_OF_CARD,
+			  "Bank_Name" : BANK_NAME,
+			  "BrowserName" : browserInfo,
+			  "BrowserLanguage" : browserLanguage,
+			  "BrowserPlatform" : browserPlatform,
+			  "UserAgent" : userAgent,
+			  "ScreenResolution" : screenResolution,
+			  "X10_first_digits_of_the_Card" : BIN_NUMBER
+					
+			});
 		});
 	  });
    
