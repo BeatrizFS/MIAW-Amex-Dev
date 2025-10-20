@@ -44,10 +44,10 @@
 			return `${name} ${version}`;
 		};
 
-		const browserInfo = ;
-		const browserLanguage = ;
-		const browserPlatform = ;
-		const screenResolution = ;
+		const browserInfo = " ";
+		const browserLanguage = " ";
+		const browserPlatform = " ";
+		const screenResolution = " ";
 
 		embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
 		  "_firstName": {
