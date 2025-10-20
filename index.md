@@ -3,14 +3,14 @@
 	<script>
 	   var FIRST_NAME = "Fernanda";
 	   var LAST_NAME = "Silva";
-	   var EMAIL = " ";
-	   var PHONE = " ";
+	   var EMAIL = "silva@test.com";
+	   var PHONE = "98766644";
 
-	   var CLIENT_ID = " ";
-	   var COUNTRY_OF_CARD = " ";
-	   var BANK_NAME = " ";
+	   var CLIENT_ID = "1a2b3c4u99";
+	   var COUNTRY_OF_CARD = "Brazil";
+	   var BANK_NAME = "VISA";
 	
-	   var BIN_NUMBER = " ";
+	   var BIN_NUMBER = "1345699999";
 	   var BIN_NUMBER_MASKED = BIN_NUMBER.slice(0, -4) + "****";
 
        console.log({ FIRST_NAME, LAST_NAME, EMAIL, PHONE, CLIENT_ID,
@@ -44,10 +44,10 @@
 			return `${name} ${version}`;
 		};
 
-		const browserInfo = " ";
-		const browserLanguage = " ";
-		const browserPlatform = " ";
-		const screenResolution = " ";
+		const browserInfo = fetchBrowserInfo();
+		const browserLanguage = navigator.language;
+		const browserPlatform = navigator.platform;
+		const screenResolution = `${window.screen.width}x${window.screen.height}`;
 
 		embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
 		  "_firstName": {
@@ -73,6 +73,7 @@
 		  "BrowserName" : browserInfo,
 		  "BrowserLanguage" : browserLanguage,
 		  "BrowserPlatform" : browserPlatform,
+		  "UserAgent" : userAgent,
 		  "ScreenResolution" : screenResolution,
 		  "X10_first_digits_of_the_Card" : BIN_NUMBER
 				
