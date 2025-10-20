@@ -73,7 +73,6 @@
 		  "BrowserName" : browserInfo,
 		  "BrowserLanguage" : browserLanguage,
 		  "BrowserPlatform" : browserPlatform,
-		  "UserAgent" : ,
 		  "ScreenResolution" : screenResolution,
 		  "X10_first_digits_of_the_Card" : BIN_NUMBER
 				
