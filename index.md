@@ -65,17 +65,17 @@
 		});
 		
 		embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-		  "Email" : EMAIL,
-		  "Phone" : PHONE,
-		  "Client_ID" : CLIENT_ID,
-		  "Country_Of_Card" : COUNTRY_OF_CARD,
-		  "Bank_Name" : BANK_NAME,
+		  "Email" : " ",
+		  "Phone" : " ",
+		  "Client_ID" : " ",
+		  "Country_Of_Card" : " ",
+		  "Bank_Name" : " ",
 		  "BrowserName" : browserInfo,
 		  "BrowserLanguage" : browserLanguage,
 		  "BrowserPlatform" : browserPlatform,
-		  "UserAgent" : userAgent,
+		  "UserAgent" : " ",
 		  "ScreenResolution" : screenResolution,
-		  "X10_first_digits_of_the_Card" : BIN_NUMBER
+		  "X10_first_digits_of_the_Card" : " "
 				
 		});
 	  });
