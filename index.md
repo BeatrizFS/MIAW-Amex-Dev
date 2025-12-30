@@ -3,7 +3,7 @@
 	<script>
 	   var FIRST_NAME = "Fernanda";
 	   var LAST_NAME = "Silva";
-	   var EMAIL = "silva@test.com";
+	   var EMAIL = "silva@test1.com";
 	   var PHONE = "98766644";
 
 	   var CLIENT_ID = "1a2b3c4u99";
