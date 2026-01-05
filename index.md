@@ -65,11 +65,11 @@
 		});
 		
 		embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-		  "Email" : 'silva@test.com',
-		  "Phone" : '98766644',
-		  "Client_ID" : '1a2b3c4u99',
-		  "Country_Of_Card" : 'Brazil',
-		  "Bank_Name" : 'VISA',
+		  "Email" : EMAIL,
+		  "Phone" : PHONE,
+		  "Client_ID" : CLIENT_ID,
+		  "Country_Of_Card" : COUNTRY_OF_CARD,
+		  "Bank_Name" : BANK_NAME,
 		  "BrowserName" : browserInfo,
 		  "BrowserLanguage" : browserLanguage,
 		  "BrowserPlatform" : browserPlatform,
